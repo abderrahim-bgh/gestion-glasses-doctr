@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".box"
+    android:orientation="vertical"
+    android:background="#e8edf5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="24px"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="5dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="130dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/glas_1"
+                            android:layout_gravity="top"
+                            android:id="@+id/glas_1"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            >
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:layout_width="30dp"
+                                android:layout_height="7dp"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_close_24"
+                                android:background="@drawable/shape_cancel"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginRight="10dp"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Glasses For Men"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="Prix"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="156.99"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:paddingRight="80dp">
+
+                                <TextView
+                                    android:layout_width="37dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingRight="20dp"
+                                    android:text="Qte"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+                                <androidx.appcompat.widget.AppCompatImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/romov_prd"/>
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:background="@drawable/radio_selected"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:text="3"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+                                <androidx.appcompat.widget.AppCompatImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/add_prd"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="Total"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:gravity="right"
+                                    android:paddingRight="20dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="470.97"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:gravity="right"
+                                    android:paddingRight="10dp"/>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="24px"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="5dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="130dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/glas_8"
+                            android:layout_gravity="top"
+                            android:id="@+id/glas_8"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            >
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:layout_width="30dp"
+                                android:layout_height="7dp"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_close_24"
+                                android:background="@drawable/shape_cancel"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginRight="10dp"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Glasses For Men"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="Prix"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="295.99"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:paddingRight="80dp">
+
+                                <TextView
+                                    android:layout_width="37dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingRight="18dp"
+                                    android:text="Qte"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <androidx.appcompat.widget.AppCompatImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/romov_prd"/>
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:background="@drawable/radio_selected"
+                                    android:textColor="@color/black"
+                                    android:inputType = "numberDecimal"
+                                    android:gravity="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:text="3"
+                                    />
+                                <androidx.appcompat.widget.AppCompatImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/add_prd"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="Total"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:gravity="right"
+                                    android:paddingRight="20dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="887.97"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:gravity="right"
+                                    android:paddingRight="10dp"/>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="24px"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="5dp"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="130dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/glas_10"
+                            android:layout_gravity="top"
+                            android:id="@+id/glas_10"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            >
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:layout_width="30dp"
+                                android:layout_height="7dp"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_baseline_close_24"
+                                android:background="@drawable/shape_cancel"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginRight="10dp"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Glasses For Men"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="Prix"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="656.99"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:paddingRight="80dp">
+
+                                <TextView
+                                    android:layout_width="37dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingRight="20dp"
+                                    android:text="Qte"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+                                <androidx.appcompat.widget.AppCompatImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/romov_prd"/>
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:background="@drawable/radio_selected"
+                                    android:textColor="@color/black"
+                                    android:inputType = "numberDecimal"
+                                    android:gravity="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:text="2"
+                                    />
+                                <androidx.appcompat.widget.AppCompatImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/add_prd"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="Total"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:gravity="right"
+                                    android:paddingRight="20dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:layout_below="@+id/glas_1"
+                                    android:text="1313.98"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:gravity="right"
+                                    android:paddingRight="10dp"/>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="56dp"
+        android:background="@drawable/shap_bar"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Total"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center|right"
+            android:paddingRight="30dp"
+            />
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="2672.92"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#DD1027"
+            android:gravity="center|right"
+            android:paddingRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/id_navBar"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="56dp"
+        app:menu="@menu/menu_bar"
+        android:background="@drawable/shap_bar"
+        app:itemTextColor="@drawable/select_bar"
+        app:itemIconTint="@drawable/select_bar"
+        app:itemIconSize="28dp"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Liste_Produits"
+    android:background="#e8edf5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <SearchView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shap_tob_bar"
+                    app:cardCornerRadius="24px"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:goIcon="@color/black"
+                    android:gravity="center"
+                    />
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center|end"
+                    android:src="@drawable/list_bulleted"
+                    android:background="@drawable/shap_tob_bar"
+                    android:layout_marginHorizontal="10dp"
+                    />
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center|end"
+                    android:src="@drawable/shopping_cart"
+                    android:background="@drawable/shap_tob_bar"
+                    android:layout_marginRight="15dp"
+                    android:onClick="show_box"
+                    />
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginHorizontal="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bckg_btn_contact"
+            android:layout_marginVertical="8dp"
+            android:text="+ Ajouter un produit"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="ajout"
+            />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_1"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_1"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_2"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_2"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_3"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_3"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_4"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_4"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_5"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_5"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_1"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_6"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_6"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_6"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_6"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_6"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_7"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_7"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_7"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_7"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_7"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_8"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_8"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_8"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_8"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_8"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_9"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_9"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_9"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_9"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_9"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="24px">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="5dp"
+                            android:background="#fff">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:src="@drawable/glas_10"
+                                android:layout_gravity="top"
+                                android:id="@+id/glas_10"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/glas_10"
+                                android:text="Glasses For Men"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_10"
+                                android:text="Qte : 15"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/glas_10"
+                                android:text="2599.00 DA"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/id_navBar"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="56dp"
+            app:menu="@menu/menu_bar"
+            android:background="@drawable/shap_bar"
+            app:itemTextColor="@drawable/select_bar"
+            app:itemIconTint="@drawable/select_bar"
+            app:itemIconSize="28dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+</LinearLayout>

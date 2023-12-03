@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5"
+    android:orientation="vertical"
+    android:background="#e8edf5"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AJOUTER UNE CLIENT"
+        android:textColor="#409766"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="35dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#409766"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        >
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Nom :"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/radio_selected"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:inputType = "text"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Prenom :"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/radio_selected"
+                android:gravity="center"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Email:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/radio_selected"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:inputType ="textEmailAddress"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Téléphone:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/radio_selected"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:inputType = "phone"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Adresse :"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/radio_selected"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="56dp"
+                android:text="ENREGISTRER"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/bckg_btn_contact"
+                android:layout_marginRight="15dp"
+                android:layout_margin="1dp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/bckg_btn_registre"
+                android:text="FERMER"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:onClick="fermercompt"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/id_navBar"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="56dp"
+        app:menu="@menu/menu_bar"
+        android:background="@drawable/shap_bar"
+        app:itemTextColor="@drawable/select_bar"
+        app:itemIconTint="@drawable/select_bar"
+        app:itemIconSize="28dp"
+        />
+
+
+
+
+
+</LinearLayout>

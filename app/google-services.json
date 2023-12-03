@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "98722070355",
+    "project_id": "gestion-306d4",
+    "storage_bucket": "gestion-306d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98722070355:android:6a7b4dca62787cc2b62ba6",
+        "android_client_info": {
+          "package_name": "com.example.gestion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98722070355-tmalbqvt5ef59hlj3s5cr5v5nlig8ov0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8AdhZa7I0DrKBypgWaIKS0iUuzNWKgFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98722070355-tmalbqvt5ef59hlj3s5cr5v5nlig8ov0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
